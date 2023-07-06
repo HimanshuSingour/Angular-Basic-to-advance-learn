@@ -1,0 +1,37 @@
+
+<h1>Data-Binding- Heading</h1>
+
+
+<! -- String Interpolition --->
+<!-- <p> {{ dataBinding }}</p> -->
+
+<! -- Property Binding --->
+<!-- <img [src]="propertyBindingimageUrl" alt=""> -->
+
+<! -- class Binding --->
+<!-- <h2 [class.text-blue] = "StyleOrClass">This is Class Binding</h2> -->
+
+<! -- Style Binding --->
+<!-- <h2 [style.color] = "StyleOrClass? 'blue' : 'red' " >Style Binding</h2> -->
+
+<! -- Event Binding --->
+<!-- <button (click)="eventBinding()">Click Me</button> -->
+
+<! -- Event Filtering --->
+
+<!-- on key up -->
+<!-- <input type="text" (keyup.enter)="keyUpBinding($event)"> -->
+
+<!-- or using Templet variable.. #username -->
+
+<!-- on key up -->
+<!-- <input type="text" (keyup.enter)="keyUpBindings(username.value)" #username> -->
+
+<!-- Twp way data binding -->
+<!-- <input type="text" [(ngModel)]="twoWayDataBinding" (keyup.enter)="twoWays()"> -->
+
+// Service Implementation
+
+<h2>Connected To DataBinding Component</h2>
+<h3>{{ servicesVaribale | json }}</h3>
+

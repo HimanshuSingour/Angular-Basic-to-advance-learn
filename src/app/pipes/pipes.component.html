@@ -1,0 +1,13 @@
+<h5>{{ pipesOne | lowercase }}</h5>
+
+<h5>{{ numbersOne | number }}</h5>
+<h5>{{ numberDecimal | number : "1.2-2" }}</h5>
+<h5>{{ numberCurrency | currency : "USD" }}</h5>
+<h5>{{ todayData }}</h5>
+<h5>{{ jsonPipes | json }}</h5>
+<h5>{{ percentagePip | percent : "1.1-1" }}</h5>
+<h5>{{ jsonPipes | slice : 1 : 4 | json }}</h5>
+
+<!-- Custome Pipes -->
+
+<h3>{{ customsPipes | json | cutomeOne }}</h3>

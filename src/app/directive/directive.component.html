@@ -1,0 +1,61 @@
+<p>directive works!</p>
+
+<h4>Using Index</h4>
+<h3>{{ user }}</h3>
+
+<ul>
+  <li>{{ user[0] }}</li>
+  <li>{{ user[1] }}</li>
+  <li>{{ user[2] }}</li>
+  <li>{{ user[3] }}</li>
+  <li>{{ user[4] }}</li>
+</ul>
+
+<h4> NgFor Directive</h4>
+
+<ul>
+  <li *ngFor="let u of user; let i = index">{{ u }}</li>
+</ul>
+
+<h4>Fetching obecjt</h4>
+
+<ul>
+  <li *ngFor="let obj of userObg">{{ obj | json }}</li>
+</ul>
+
+<h4>ngIf Directive</h4>
+
+<!-- <div *ngIf="userObg.length > 0">
+  <ul>
+    <li *ngFor="let obj of userObg">{{ obj | json }}</li>
+  </ul>
+</div>
+
+<div *ngIf="userObg.length == 0">
+  <p>There is no data to fetch...</p>
+</div> -->
+
+<!-- or -->
+
+<!-- <div *ngIf="userObg.length > 0; then ifPart else elsePart "></div>
+
+<ng-template #ifPart>
+  <ul>
+    <li *ngFor="let obj of userObg">{{ obj | json }}</li>
+  </ul>
+</ng-template>
+
+<ng-template #elsePart>
+  <p>There is no data to fetch...</p>
+</ng-template>
+
+
+<h4>Switch Directive</h4> -->
+
+// Implementation of service
+
+<h2>Connect To Directive Compnent</h2>
+<h3>{{servicesVaribale | json}}</h3>
+
+
+
